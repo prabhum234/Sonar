@@ -127,37 +127,7 @@ public class Sonar extends Activity {
 			volume = 1f - ((float)distance/floorLevel);		
 			return volume;
 		}
-		/*protected void GenerateFrequency(int distance,boolean left,boolean right){
-			{
-				float volume = 0,leftVolume=0,rightVolume=0;
-				
-				volume = 1.2f - ((float)distance/floorLevel);		
-				if(left && right){
-					mp.setVolume(leftVolume, rightVolume);	
-				}
-				else if(right){
-					mp.setVolume(0, rightVolume);
-				}
-				else if(left){
-					mp.setVolume(leftVolume, 0);
-				}
-				else{
-					mp.setVolume(0,0);	
-					txtOutput.setText("");
-				}
-				
-				if(distance>10 && distance <= floorLevel){											
-					if(!mp.isPlaying())
-						mp.start();
-					//txtOutput.append(Float.toString(volume)+" ");						
-				}
-				else{						
-					mp.setVolume(0,0);	
-					mp.pause();
-					txtOutput.setText("");
-				}						
-			}		
-		}*/
+		
 	};
     @Override
     public void onCreate(Bundle savedInstanceState) {
